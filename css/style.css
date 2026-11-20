@@ -861,9 +861,11 @@ nav ul li a:hover {
 @media (max-width: 768px) {
 
     .home {
+
         height: auto;
-        min-height: 100vh;
+        min-height: auto;
     }
+
 
     .home .inner {
         padding-top: 30px;
@@ -889,6 +891,12 @@ nav ul li a:hover {
     .home .inner .poster {
         left: -47px;
         top: 71%;
+    }
+
+    .home .inner .btn-solid {
+        margin-bottom: 15px;
+        margin-left: 12px;
+
     }
 
     .home .inner .buttons {
@@ -924,6 +932,18 @@ nav ul li a:hover {
         display: none;
         width: 100%;
         height: 350px;
+    }
+
+    .what-we-do .container .grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+
+    .our-team .container .grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
     }
 
     .our-games .container .carousel-item .item:first-child {
@@ -966,10 +986,16 @@ nav ul li a:hover {
 
 
 @media (min-width: 768px) and (max-width: 1024px) {
+    .home {
+        height: auto;
+        min-height: auto;
+
+    }
 
     .home .inner {
         flex-direction: row;
         flex-wrap: nowrap;
+        padding-bottom: 80px;
 
     }
 
